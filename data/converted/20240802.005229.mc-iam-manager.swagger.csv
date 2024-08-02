@@ -1,0 +1,43 @@
+tag,opertaionID,summary,method,path
+WorkspaceProjectMapping,createwpmapping,CreateWPmapping,post,/api/wsprj
+WorkspaceProjectMapping,updatewpmappings,UpdateWPmappings,put,/api/wsprj
+WorkspaceProjectMapping,getwpmappinglistorderbyworkspace,GetWPmappingListOrderbyWorkspace,get,/api/wsprj
+Auth,getusevalidate,GetUseValidate,get,/api/auth/validate
+Project,createproject,CreateProject,post,/api/prj
+Project,getprojectlist,GetProjectList,get,/api/prj
+Auth,loginrefresh,LoginRefresh,post,/api/auth/login/refresh
+Workspace,getworkspacebyid,GetWorkspaceById,get,/api/ws/workspace/id/{workspaceid}
+Workspace,updateworkspacebyid,UpdateWorkspaceById,put,/api/ws/workspace/id/{workspaceid}
+Workspace,deleteworkspacebyid,DeleteWorkspaceById,delete,/api/ws/workspace/id/{workspaceid}
+[onlyDb] Role,getrolelist,GetRoleList,get,/api/role
+[onlyDb] Role,createrole,CreateRole,post,/api/role
+Project,deleteprojectbyid,DeleteProjectById,delete,/api/prj/project/id/{projectid}
+Project,updateprojectbyid,UpdateProjectById,put,/api/prj/project/id/{projectid}
+Project,getprojectbyid,GetProjectById,get,/api/prj/project/id/{projectid}
+WorkspaceUserRoleMapping,createworkspaceuserrolemappingbyname,CreateWorkspaceUserRoleMappingByName,post,/api/wsuserrole
+WorkspaceUserRoleMapping,getworkspaceuserrolemappinglistorderbyworkspace,GetWorkspaceUserRoleMappingListOrderbyWorkspace,get,/api/wsuserrole
+[onlyDb] Role,getrolebyid,GetRoleById,get,/api/role/role/id/{roleid}
+[onlyDb] Role,deleterolebyid,DeleteRoleById,delete,/api/role/role/id/{roleid}
+[onlyDb] Role,updaterolebyid,UpdateRoleById,put,/api/role/role/id/{roleid}
+Auth,logout,Logout,post,/api/auth/logout
+Project,searchprojectsbyname,SearchProjectsByName,get,/api/prj/project/{projectname}
+WorkspaceUserRoleMapping,deleteworkspaceuserrolemapping,DeleteWorkspaceUserRoleMapping,delete,/api/wsuserrole/workspace/id/{workspaceid}/user/id/{userid}
+WorkspaceUserRoleMapping,getworkspaceuserrolemappingbyid,GetWorkspaceUserRoleMappingById,get,/api/wsuserrole/workspace/id/{workspaceid}/user/id/{userid}
+Tool,tokentestviewer,tokenTestViewer,get,/api/tokentest/viewer
+Tool,tokentestadmin,tokenTestAdmin,get,/api/tokentest/admin
+Workspace,getworkspacelist,GetWorkspaceList,get,/api/ws
+Workspace,createworkspace,CreateWorkspace,post,/api/ws
+Alive,alive,Alive,get,/alive
+Tool,tokentestoperator,tokenTestOperator,get,/api/tokentest/operator
+WorkspaceProjectMapping,deleteworkspaceprojectmappingbyid,DeleteWorkspaceProjectMappingById,delete,/api/wsprj/workspace/id/{workspaceid}/project/id/{projectid}
+Auth,getcerts,GetCerts,get,/api/auth/certs
+Workspace,searchworkspacesbyname,SearchWorkspacesByName,get,/api/ws/workspace/{workspacename}
+Tool,syncprojectlistwithmcinfra,SyncProjectListWithMcInfra,get,/api/tool/mcinfra/sync
+Tool,tokentest,tokenTest,get,/api/tokentest
+WorkspaceProjectMapping,getwpmappinglistbyworkspaceid,GetWPmappingListByWorkspaceId,get,/api/wsprj/workspace/id/{workspaceid}
+WorkspaceUserRoleMapping,getworkspaceuserrolemappinglistbyworkspaceid,GetWorkspaceUserRoleMappingListByWorkspaceId,get,/api/wsuserrole/workspace/id/{workspaceid}
+Auth,getuserinfo,GetUserinfo,get,/api/auth/userinfo
+[onlyDb] Role,searchrolesbyname,SearchRolesByName,get,/api/role/role/{rolename}
+[PoC]  STS,securitykey,Securitykey,get,/api/poc/sts/securitykey
+Auth,login,Login,post,/api/auth/login
+WorkspaceUserRoleMapping,getworkspaceuserrolemappinglistbyuserid,GetWorkspaceUserRoleMappingListByUserId,get,/api/wsuserrole/user/id/{userid}

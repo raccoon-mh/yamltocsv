@@ -3,7 +3,13 @@ cb-tumblebug:
     url: https://raw.githubusercontent.com/cloud-barista/cb-tumblebug/main/src/api/rest/docs/swagger.yaml
     filePath: ./data/basedata/cb-tumblebug.swagger.yaml
 
+mc-iam-manager:
+  yaml:
+    url: https://raw.githubusercontent.com/m-cmp/mc-iam-manager/docs/swagger/swagger.json
+    filePath: ./data/basedata/mc-iam-manager.swagger.yaml
+
 # cb-spider:
 #   yaml:
 #     url: 
 #     filePath: ./data/basedata/cb-spider.swagger.yaml
+

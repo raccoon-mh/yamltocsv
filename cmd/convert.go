@@ -52,8 +52,11 @@ func convertYaml(cmd *cobra.Command, args []string) {
 
 		for rootIndex, rootIndexvalue := range swagger {
 			if rootIndex == "paths" {
-				for path, pathData := range rootIndexvalue.(map[string]interface{}) {
-					for method, apiSpec := range pathData.(map[string]interface{}) {
+				for path, pathData := range rootIndexvalue.(map[string]any) {
+					for method, apiSpec := range pathData.(map[string]any) {
+						if method == "parameters" {
+							continue
+						}
 						row := make([]string, 5)
 						row[3] = method
 						row[4] = path

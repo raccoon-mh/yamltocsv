@@ -1,0 +1,159 @@
+tag,opertaionID,summary,method,path
+[Infra service] MCIS Provisioning management,PostMcisSubGroupScaleOut,ScaleOut subGroup in specified MCIS,post,/ns/{nsid}/mcis/{mcisid}/subgroup/{subgroupid}
+[Infra service] MCIS Provisioning management,GetMcisGroupVms,List VMs with a SubGroup label in a specified MCIS,get,/ns/{nsid}/mcis/{mcisid}/subgroup/{subgroupid}
+[Infra resource] MCIR Security group management,DelAllSecurityGroup,Delete all Security Groups,delete,/ns/{nsid}/resources/securitygroup
+[Infra resource] MCIR Security group management,PostSecurityGroup,Create Security Group,post,/ns/{nsid}/resources/securitygroup
+[Infra resource] MCIR Security group management,GetAllSecurityGroup,List all Security Groups or Security Groups' ID,get,/ns/{nsid}/resources/securitygroup
+[Admin] Multi-Cloud environment configuration,GetRegion,Get registered region info,get,/provider/{providername}/region/{regionname}
+[Infra resource] MCIR Image management,GetImage,Get image,get,/ns/{nsid}/resources/image/{imageid}
+[Infra resource] MCIR Image management,DelImage,Delete image,delete,/ns/{nsid}/resources/image/{imageid}
+[Infra resource] MCIR Image management,PutImage,Update image,put,/ns/{nsid}/resources/image/{imageid}
+[Infra resource] NLB management,PostMcNLB,Create a special purpose MCIS for NLB and depoly and setting SW NLB,post,/ns/{nsid}/mcis/{mcisid}/mcswnlb
+[Infra resource] K8sCluster management,PostK8sNodeGroup,Add a K8sNodeGroup,post,/ns/{nsid}/k8scluster/{k8sclusterid}/k8snodegroup
+[Infra resource] NLB management,GetNLBHealth,Get NLB Health,get,/ns/{nsid}/mcis/{mcisid}/nlb/{nlbid}/healthz
+[Admin] Multi-Cloud environment configuration,GetCloudInfo,Get cloud information,get,/cloudinfo
+[Infra service] MCIS Resource monitor (for developer),GetMonitorData,"Get monitoring data of specified MCIS for specified monitoring metric (cpu, memory, disk, network)",get,/ns/{nsid}/monitoring/mcis/{mcisid}/metric/{metric}
+[Infra service] MCIS Provisioning management,RecommendVm,Recommend MCIS plan (filter and priority),post,/mcisrecommendvm
+[Infra resource] MCIR Common,CheckResource,Check resources' existence,get,/{nsid}/checkresource/{resourcetype}/{resourceid}
+[Infra service] MCIS Remote command,GetBastionNodes,Get bastion nodes for a VM,get,/ns/{nsid}/mcis/{mcisid}/vm/{targetvmid}/bastion
+[Infra service] MCIS Performance benchmarking (WIP),GetBenchmark,Run MCIS benchmark for a single performance metric and return results,post,/ns/{nsid}/benchmark/mcis/{mcisid}
+[Infra resource] MCIR Data Disk management,GetVmDataDisk,Get available dataDisks for a VM,get,/ns/{nsid}/mcis/{mcisid}/vm/{vmid}/datadisk
+[Infra resource] MCIR Data Disk management,PostVmDataDisk,Provisioning (Create and attach) dataDisk,post,/ns/{nsid}/mcis/{mcisid}/vm/{vmid}/datadisk
+[Infra resource] MCIR Data Disk management,PutVmDataDisk,Attach/Detach available dataDisk,put,/ns/{nsid}/mcis/{mcisid}/vm/{vmid}/datadisk
+[Infra service] MCIS Provisioning management,PostMcisVm,Create and add homogeneous VMs(subGroup) to a specified MCIS (Set subGroupSize for multiple VMs),post,/ns/{nsid}/mcis/{mcisid}/vm
+[Admin] System management,InspectResourcesOverview,"Inspect Resources Overview (vNet, securityGroup, sshKey, vm) registered in CB-Tumblebug and CSP for all connections",get,/inspectresourcesoverview
+[Infra service] MCIS Provisioning management,GetMcisGroupIds,List SubGroup IDs in a specified MCIS,get,/ns/{nsid}/mcis/{mcisid}/subgroup
+[Infra resource] MCIR Network management,GetAllVNet,List all VNets or VNets' ID,get,/ns/{nsid}/resources/vnet
+[Infra resource] MCIR Network management,PostVNet,Create VNet,post,/ns/{nsid}/resources/vnet
+[Infra resource] MCIR Network management,DelAllVNet,Delete all VNets,delete,/ns/{nsid}/resources/vnet
+[Infra resource] MCIR Common,LookupSpecList,Lookup spec list,post,/lookupspecs
+[Admin] System environment,InitAllConfig,Init all configs,delete,/config
+[Admin] System environment,PostConfig,Create or Update config,post,/config
+[Admin] System environment,GetAllConfig,List all configs,get,/config
+[Infra resource] Snapshot and Custom Image Management,PostCustomImage,Register existing Custom Image in a CSP,post,/ns/{nsid}/resources/customimage
+[Infra resource] Snapshot and Custom Image Management,GetAllCustomImage,List all customImages or customImages' ID,get,/ns/{nsid}/resources/customimage
+[Infra resource] Snapshot and Custom Image Management,DelAllCustomImage,Delete all customImages,delete,/ns/{nsid}/resources/customimage
+[Admin] Multi-Cloud environment configuration,GetRegionList,List all registered regions,get,/region
+[Infra resource] MCIR Data Disk management,GetDataDisk,Get Data Disk,get,/ns/{nsid}/resources/datadisk/{datadiskid}
+[Infra resource] MCIR Data Disk management,DelDataDisk,Delete Data Disk,delete,/ns/{nsid}/resources/datadisk/{datadiskid}
+[Infra resource] MCIR Data Disk management,PutDataDisk,Upsize Data Disk,put,/ns/{nsid}/resources/datadisk/{datadiskid}
+[Infra resource] NLB management,GetNLB,Get NLB,get,/ns/{nsid}/mcis/{mcisid}/nlb/{nlbid}
+[Infra resource] NLB management,DelNLB,Delete NLB,delete,/ns/{nsid}/mcis/{mcisid}/nlb/{nlbid}
+[Infra resource] MCIR Network management,PostSubnet,Create Subnet,post,/ns/{nsid}/resources/vnet/{vnetid}/subnet
+[Infra resource] MCIR Access key management,GetSshKey,Get SSH Key,get,/ns/{nsid}/resources/sshkey/{sshkeyid}
+[Infra resource] MCIR Access key management,DelSshKey,Delete SSH Key,delete,/ns/{nsid}/resources/sshkey/{sshkeyid}
+[Infra resource] MCIR Access key management,PutSshKey,Update SSH Key,put,/ns/{nsid}/resources/sshkey/{sshkeyid}
+[Infra resource] MCIR Image management,FetchImages,Fetch images,post,/ns/{nsid}/resources/fetchimages
+[Infra service] MCIS Auto control policy management (WIP),DelAllMcisPolicy,Delete all MCIS policies,delete,/ns/{nsid}/policy/mcis
+[Infra service] MCIS Auto control policy management (WIP),GetAllMcisPolicy,List all MCIS policies,get,/ns/{nsid}/policy/mcis
+[Utility] Multi-cloud network design,PostUtilToValidateNetwork,Validate a multi-cloud network configuration,post,/util/net/validate
+[Infra service] MCIS Resource monitor (for developer),PutMonitorAgentStatusInstalled,Set monitoring agent (CB-Dragonfly agent) installation status installed (for Windows VM only),put,/ns/{nsid}/monitoring/status/mcis/{mcisid}/vm/{vmid}
+[Admin] System management,GetReadyz,Check Tumblebug is ready,get,/readyz
+[Infra service] MCIS Resource monitor (for developer),PostInstallMonitorAgentToMcis,Install monitoring agent (CB-Dragonfly agent) to MCIS,post,/ns/{nsid}/monitoring/install/mcis/{mcisid}
+[Admin] Multi-Cloud environment configuration,LoadCommonResource,Load Common Resources from internal asset files,get,/loadcommonresource
+[Admin] Multi-Cloud environment configuration,GetK8sClusterInfo,Get kubernetes cluster information,get,/k8sclusterinfo
+[Infra resource] K8sCluster management,DeleteAllK8sCluster,Delete all K8sClusters,delete,/ns/{nsid}/k8scluster
+[Infra resource] K8sCluster management,PostK8sCluster,Create K8sCluster,post,/ns/{nsid}/k8scluster
+[Infra resource] K8sCluster management,GetAllK8sCluster,List all K8sClusters or K8sClusters' ID,get,/ns/{nsid}/k8scluster
+[Infra service] MCIS Remote command,PostCmdMcis,Send a command to specified MCIS,post,/ns/{nsid}/cmd/mcis/{mcisid}
+[Infra service] MCIS Remote command,RemoveBastionNodes,Remove a bastion VM from all vNets,delete,/ns/{nsid}/mcis/{mcisid}/bastion/{bastionvmid}
+[Infra service] MCIS Performance benchmarking (WIP),GetAllBenchmark,Run MCIS benchmark for all performance metrics and return results,post,/ns/{nsid}/benchmarkall/mcis/{mcisid}
+[VPN] Site-to-site VPN (under development),GetRequestStatusOfSiteToSiteVpn,Check the status of a specific request by its ID,get,/ns/{nsid}/mcis/{mcisid}/vpn/{vpnid}/request/{requestid}
+[Infra resource] MCIR Image management,SearchImage,Search image,post,/ns/{nsid}/resources/searchimage
+[Infra service] MCIS Provisioning management,PostSystemMcis,Create System MCIS Dynamically for Special Purpose in NS:system-purpose-common-ns,post,/systemmcis
+[Infra resource] MCIR Security group management,DelFirewallRules,Delete FirewallRules,delete,/ns/{nsid}/resources/securitygroup/{securitygroupid}/rules
+[Infra resource] MCIR Security group management,PostFirewallRules,Create FirewallRules,post,/ns/{nsid}/resources/securitygroup/{securitygroupid}/rules
+[VPN] Sites in MCIS,GetSitesInMcis,Get sites in MCIS,get,/ns/{nsid}/mcis/{mcisid}/site
+[VPN] Site-to-site VPN (under development),GetSiteToSiteVpn,"Get resource info of a site-to-site VPN (Currently, GCP-AWS is supported)",get,/ns/{nsid}/mcis/{mcisid}/vpn/{vpnid}
+[Admin] System management,DeleteObject,Delete an object,delete,/object
+[Admin] System management,GetObject,Get value of an object,get,/object
+[Utility] Multi-cloud network design,PostUtilToDesignNetwork,Design a multi-cloud network configuration,post,/util/net/design
+[Infra resource] K8sCluster management,PutChangeK8sNodeGroupAutoscaleSize,Change a K8sNodeGroup's Autoscale Size,put,/ns/{nsid}/k8scluster/{k8sclusterid}/k8snodegroup/{k8snodegroupname}/autoscalesize
+[Infra service] MCIS Provisioning management,PostMcisVmDynamic,Create VM Dynamically and add it to MCIS,post,/ns/{nsid}/mcis/{mcisid}/vmdynamic
+[Admin] Multi-Cloud environment configuration,GetConnConfigList,List all registered ConnConfig,get,/connconfig
+[Infra resource] K8sCluster management,GetK8sCluster,Get K8sCluster,get,/ns/{nsid}/k8scluster/{k8sclusterid}
+[Infra resource] K8sCluster management,DeleteK8sCluster,Delete K8sCluster,delete,/ns/{nsid}/k8scluster/{k8sclusterid}
+[Admin] System management,RegisterCspNativeResources,"Register CSP Native Resources (vNet, securityGroup, sshKey, vm) to CB-Tumblebug",post,/registercspresources
+[Infra resource] MCIR Spec management,GetAllSpec,List all specs or specs' ID,get,/ns/{nsid}/resources/spec
+[Infra resource] MCIR Spec management,PostSpec,Register spec,post,/ns/{nsid}/resources/spec
+[Infra resource] MCIR Spec management,DelAllSpec,Delete all specs,delete,/ns/{nsid}/resources/spec
+[Infra service] MCIS Performance benchmarking (WIP),PostInstallBenchmarkAgentToMcis,Install the benchmark agent to specified MCIS,post,/ns/{nsid}/installbenchmarkagent/mcis/{mcisid}
+[Infra resource] MCIR Network management,DelSubnet,Delete Subnet,delete,/ns/{nsid}/resources/vnet/{vnetid}/subnet/{subnetid}
+[Infra resource] MCIR Spec management,FetchSpecs,Fetch specs,post,/ns/{nsid}/resources/fetchspecs
+[Infra resource] MCIR Common,LoadDefaultResource,Load Default Resource from internal asset file,get,/ns/{nsid}/loaddefaultresource
+[Admin] System management,CheckHTTPVersion,Check HTTP version of incoming request,get,/httpversion
+[Infra service] MCIS Control lifecycle,GetControlMcisVm,"Control the lifecycle of VM (suspend, resume, reboot, terminate)",get,/ns/{nsid}/control/mcis/{mcisid}/vm/{vmid}
+[Infra resource] K8sCluster management,PutUpgradeK8sCluster,Upgrade a K8sCluster's version,put,/ns/{nsid}/k8scluster/{k8sclusterid}/upgrade
+[Admin] System management,RegisterCspNativeResourcesAll,"Register CSP Native Resources (vNet, securityGroup, sshKey, vm) from all Clouds to CB-Tumblebug",post,/registercspresourcesall
+[Admin] Request tracking,GetRequest,Get request details,get,/request/{reqid}
+[Admin] Request tracking,DeleteRequest,Delete a specific request's details,delete,/request/{reqid}
+[Infra service] MCIS Provisioning management,GetMcis,"Get MCIS object (option: status, accessInfo, vmId)",get,/ns/{nsid}/mcis/{mcisid}
+[Infra service] MCIS Provisioning management,DelMcis,Delete MCIS,delete,/ns/{nsid}/mcis/{mcisid}
+[Infra resource] Snapshot and Custom Image Management,PostMcisVmSnapshot,Snapshot VM and create a Custom Image Object using the Snapshot,post,/ns/{nsid}/mcis/{mcisid}/vm/{vmid}/snapshot
+[Admin] System management,GetObjects,List all objects for a given key,get,/objects
+[Admin] System management,DeleteObjects,Delete child objects along with the given object,delete,/objects
+[Infra resource] MCIR Common,LookupImage,Lookup image,post,/lookupimage
+[Admin] Request tracking,GetAllRequests,Get all requests,get,/requests
+[Admin] Request tracking,DeleteAllRequests,Delete all requests' details,delete,/requests
+[Infra service] MCIS Provisioning management,DelMcisVm,Delete VM in specified MCIS,delete,/ns/{nsid}/mcis/{mcisid}/vm/{vmid}
+[Infra service] MCIS Provisioning management,GetMcisVm,Get VM in specified MCIS,get,/ns/{nsid}/mcis/{mcisid}/vm/{vmid}
+[Infra resource] MCIR Common,LookupImageList,Lookup image list,post,/lookupimages
+[Infra resource] MCIR Data Disk management,GetAllDataDisk,List all Data Disks or Data Disks' ID,get,/ns/{nsid}/resources/datadisk
+[Infra resource] MCIR Data Disk management,DelAllDataDisk,Delete all Data Disks,delete,/ns/{nsid}/resources/datadisk
+[Infra resource] MCIR Data Disk management,PostDataDisk,Create Data Disk,post,/ns/{nsid}/resources/datadisk
+[Infra resource] K8sCluster management,GetAvailableK8sClusterVersion,Get available kubernetes cluster version,get,/availablek8sclusterversion
+[Infra service] MCIS Provisioning management,PostMcisDynamic,Create MCIS Dynamically,post,/ns/{nsid}/mcisdynamic
+[Infra service] MCIS Provisioning management,PostMcis,Create MCIS,post,/ns/{nsid}/mcis
+[Infra service] MCIS Provisioning management,DelAllMcis,Delete all MCISs,delete,/ns/{nsid}/mcis
+[Infra service] MCIS Provisioning management,GetAllMcis,List all MCISs or MCISs' ID,get,/ns/{nsid}/mcis
+[Namespace] Namespace management,PostNs,Create namespace,post,/ns
+[Namespace] Namespace management,DelAllNs,Delete all namespaces,delete,/ns
+[Namespace] Namespace management,GetAllNs,List all namespaces or namespaces' ID,get,/ns
+[Admin] Multi-Cloud environment configuration,RegisterCredential,Post register Credential info,post,/credential
+[Infra resource] MCIR Common,LookupSpec,Lookup spec,post,/lookupspec
+[Infra service] MCIS Provisioning management,PostMcisDynamicCheckRequest,Check available ConnectionConfig list for creating MCIS Dynamically,post,/mcisdynamiccheckrequest
+[Infra resource] MCIR Spec management,PutSpec,Update spec,put,/ns/{nsid}/resources/spec/{specid}
+[Infra resource] MCIR Spec management,GetSpec,Get spec,get,/ns/{nsid}/resources/spec/{specid}
+[Infra resource] MCIR Spec management,DelSpec,Delete spec,delete,/ns/{nsid}/resources/spec/{specid}
+[Infra resource] NLB management (for developer),AddNLBVMs,Add VMs to NLB,post,/ns/{nsid}/mcis/{mcisid}/nlb/{nlbid}/vm
+[Infra resource] NLB management (for developer),RemoveNLBVMs,Delete VMs from NLB,delete,/ns/{nsid}/mcis/{mcisid}/nlb/{nlbid}/vm
+[VPN] Site-to-site VPN (under development),PostSiteToSiteVpn,"Create a site-to-site VPN (Currently, GCP-AWS is supported)",post,/stream-response/ns/{nsid}/mcis/{mcisid}/vpn/{vpnid}
+[VPN] Site-to-site VPN (under development),DeleteSiteToSiteVpn,"Delete a site-to-site VPN (Currently, GCP-AWS is supported)",delete,/stream-response/ns/{nsid}/mcis/{mcisid}/vpn/{vpnid}
+[VPN] Site-to-site VPN (under development),PutSiteToSiteVpn,(To be provided) Update a site-to-site VPN,put,/stream-response/ns/{nsid}/mcis/{mcisid}/vpn/{vpnid}
+[Infra resource] MCIR Common,DelAllDefaultResources,Delete all Default Resource Objects in the given namespace,delete,/ns/{nsid}/defaultresources
+[Admin] System environment,InitConfig,Init config,delete,/config/{configid}
+[Admin] System environment,GetConfig,Get config,get,/config/{configid}
+[Infra resource] K8sCluster management,PutSetK8sNodeGroupAutoscaling,Set a K8sNodeGroup's Autoscaling On/Off,put,/ns/{nsid}/k8scluster/{k8sclusterid}/k8snodegroup/{k8snodegroupname}/onautoscaling
+[Infra resource] MCIR Network management,GetVNet,Get VNet,get,/ns/{nsid}/resources/vnet/{vnetid}
+[Infra resource] MCIR Network management,DelVNet,Delete VNet,delete,/ns/{nsid}/resources/vnet/{vnetid}
+[Admin] System management,InspectResources,"Inspect Resources (vNet, securityGroup, sshKey, vm) registered in CB-Tumblebug, CB-Spider, CSP",post,/inspectresources
+[Infra service] MCIS Control lifecycle,GetControlMcis,"Control the lifecycle of MCIS (refine, suspend, resume, reboot, terminate)",get,/ns/{nsid}/control/mcis/{mcisid}
+[Admin] System utility,ForwardAnyReqToAny,Forward any (GET) request to CB-Spider,post,/forward/{path}
+[Infra resource] MCIR Spec management,FilterSpecsByRange,Filter specs by range,post,/ns/{nsid}/resources/filterspecsbyrange
+[Infra service] MCIS Remote command,SetBastionNodes,Set bastion nodes for a VM,put,/ns/{nsid}/mcis/{mcisid}/vm/{targetvmid}/bastion/{bastionvmid}
+[Infra resource] MCIR Security group management,GetSecurityGroup,Get Security Group,get,/ns/{nsid}/resources/securitygroup/{securitygroupid}
+[Infra resource] MCIR Security group management,DelSecurityGroup,Delete Security Group,delete,/ns/{nsid}/resources/securitygroup/{securitygroupid}
+[Admin] Multi-Cloud environment configuration,GetConnConfig,Get registered ConnConfig info,get,/connconfig/{connconfigname}
+[Infra resource] K8sCluster management,DeleteK8sNodeGroup,Remove a K8sNodeGroup,delete,/ns/{nsid}/k8scluster/{k8sclusterid}/k8snodegroup/{k8snodegroupname}
+[Infra resource] MCIR Access key management,DelAllSshKey,Delete all SSH Keys,delete,/ns/{nsid}/resources/sshkey
+[Infra resource] MCIR Access key management,GetAllSshKey,List all SSH Keys or SSH Keys' ID,get,/ns/{nsid}/resources/sshkey
+[Infra resource] MCIR Access key management,PostSshKey,Create SSH Key,post,/ns/{nsid}/resources/sshkey
+[Namespace] Namespace management,DelNs,Delete namespace,delete,/ns/{nsid}
+[Namespace] Namespace management,GetNs,Get namespace,get,/ns/{nsid}
+[Namespace] Namespace management,PutNs,Update namespace,put,/ns/{nsid}
+[Infra resource] Snapshot and Custom Image Management,GetCustomImage,Get customImage,get,/ns/{nsid}/resources/customimage/{customimageid}
+[Infra resource] Snapshot and Custom Image Management,DelCustomImage,Delete customImage,delete,/ns/{nsid}/resources/customimage/{customimageid}
+[Infra service] MCIS Provisioning management,PostRegisterCSPNativeVM,Register existing VM in a CSP to Cloud-Barista MCIS,post,/ns/{nsid}/registercspvm
+[Infra resource] MCIR Image management,DelAllImage,Delete all images,delete,/ns/{nsid}/resources/image
+[Infra resource] MCIR Image management,PostImage,Register image,post,/ns/{nsid}/resources/image
+[Infra resource] MCIR Image management,GetAllImage,List all images or images' ID,get,/ns/{nsid}/resources/image
+[Infra resource] K8sCluster management,GetAvailableK8sClusterNodeImage,Get available kubernetes cluster node image,get,/availablek8sclusternodeimage
+[Auth] Test JWT authentication,,Test JWT authentication,get,/auth/test
+[Infra service] MCIS Performance benchmarking (WIP),GetLatencyBenchmark,Run MCIS benchmark for network latency,get,/ns/{nsid}/benchmarklatency/mcis/{mcisid}
+[Admin] Multi-Cloud environment configuration,GetProviderList,List all registered Providers,get,/provider
+[Infra service] MCIS Auto control policy management (WIP),GetMcisPolicy,Get MCIS Policy,get,/ns/{nsid}/policy/mcis/{mcisid}
+[Infra service] MCIS Auto control policy management (WIP),PostMcisPolicy,Create MCIS Automation policy,post,/ns/{nsid}/policy/mcis/{mcisid}
+[Infra service] MCIS Auto control policy management (WIP),DelMcisPolicy,Delete MCIS Policy,delete,/ns/{nsid}/policy/mcis/{mcisid}
+[Infra resource] NLB management,PostNLB,Create NLB,post,/ns/{nsid}/mcis/{mcisid}/nlb
+[Infra resource] NLB management,GetAllNLB,List all NLBs or NLBs' ID,get,/ns/{nsid}/mcis/{mcisid}/nlb
+[Infra resource] NLB management,DelAllNLB,Delete all NLBs,delete,/ns/{nsid}/mcis/{mcisid}/nlb
